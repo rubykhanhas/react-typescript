@@ -9,19 +9,15 @@ module.exports = (env, args) => {
 
     return {
         mode: isDev ? 'development' : 'production',
-        entry: {
-            main: './src/index.tsx',
-            vendor: './src/vendor.ts'
-        },
+        entry: './src/index.tsx',
         output: {
-            filename: '[name].[fullhash:6].js',
+            filename: 'bundle.[fullhash:6].js',
             path: path.resolve(__dirname, 'dist'),
-            publicPath: ''
         },
         devServer: {
             historyApiFallback: true,
             hot: true,
-            contentBase: 'public',
+            contentBase: path.resolve(__dirname, 'dist'),
             watchContentBase: true
         },
         devtool: isDev ? 'source-map' : false,
