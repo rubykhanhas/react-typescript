@@ -1,10 +1,16 @@
 import React, { Fragment } from 'react'
+import Col from '@/Layouts/Grid/Col';
+import Row from '@/Layouts/Grid/Row';
 
 function App() {
     return (
         <Fragment>
-            <h2>React Typescript Skeleton</h2>
-            <h5>rubykhanhas@gmail.com</h5>
+            <Row>
+                <Col span={12}>
+                    <h2>React Typescript Skeleton</h2>
+                    <h5>rubykhanhas@gmail.com</h5>
+                </Col>
+            </Row>
         </Fragment>
     )
 }
