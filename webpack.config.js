@@ -17,6 +17,7 @@ module.exports = (env, args) => {
         devServer: {
             historyApiFallback: true,
             hot: true,
+            open: true,
             contentBase: path.resolve(__dirname, 'dist'),
             watchContentBase: true
         },
