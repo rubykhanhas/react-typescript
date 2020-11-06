@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import './App.scss';
 import Col from '@/Layouts/Grid/Col';
 import Row from '@/Layouts/Grid/Row';
 

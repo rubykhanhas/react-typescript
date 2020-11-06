@@ -29,7 +29,7 @@ module.exports = (env, args) => {
             }),
             new CleanWebpackPlugin(),
             new MiniCssExtractPlugin({
-                filename: '[name].[contentHash].css'
+                filename: '[name].[contenthash:6].css'
             })
         ],
         module: {
